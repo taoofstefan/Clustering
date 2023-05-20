@@ -3,7 +3,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-data = pd.read_csv(r"Wholesale customers data.csv")
+# Load data
+data = pd.read_csv("Clustering\Wholesale customers data.csv")
 # Normalize the dataset to get all the features at the same scale
 from sklearn.preprocessing import normalize
 data_scaled = normalize(data)
